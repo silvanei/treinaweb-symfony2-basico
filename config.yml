@@ -1,0 +1,4 @@
+driver : pdo_mysql
+dbname : loja
+user   : root
+password : 83406310
