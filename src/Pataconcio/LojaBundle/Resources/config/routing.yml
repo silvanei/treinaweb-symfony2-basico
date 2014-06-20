@@ -1,0 +1,16 @@
+pataconcio_loja_homepage:
+    pattern:  /loja/
+    defaults: { _controller: PataconcioLojaBundle:Pedido:index }
+    
+pataconcio_loja_incluir:
+    pattern:  /loja/editar
+    defaults: { _controller: PataconcioLojaBundle:Pedido:editar }
+    
+pataconcio_loja_alterar:
+    pattern:  /loja/editar/{pedido}
+    defaults: { _controller: PataconcioLojaBundle:Pedido:editar }
+  
+pataconcio_loja_gravar:
+    pattern:  /loja/gravar
+    defaults: { _controller: PataconcioLojaBundle:Pedido:gravar }
+        

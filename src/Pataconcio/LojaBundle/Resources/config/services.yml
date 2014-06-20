@@ -1,0 +1,7 @@
+parameters:
+#    pataconcio_loja.example.class: Pataconcio\LojaBundle\Example
+
+services:
+#    pataconcio_loja.example:
+#        class: %pataconcio_loja.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

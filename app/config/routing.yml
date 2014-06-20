@@ -1,0 +1,8 @@
+cyber_high_cadastro:
+    resource: "@CyberHighCadastroBundle/Resources/config/routing.yml"
+    prefix:   /
+
+pataconcio_loja:
+    resource: "@PataconcioLojaBundle/Resources/config/routing.yml"
+    prefix:   /
+

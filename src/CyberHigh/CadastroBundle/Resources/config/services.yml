@@ -1,0 +1,7 @@
+parameters:
+#    cyber_high_cadastro.example.class: CyberHigh\CadastroBundle\Example
+
+services:
+#    cyber_high_cadastro.example:
+#        class: %cyber_high_cadastro.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

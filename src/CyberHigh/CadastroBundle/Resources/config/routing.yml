@@ -1,0 +1,21 @@
+cyber_high_cadastro_homepage:
+    pattern:  /cadastro/
+    defaults: { _controller: CyberHighCadastroBundle:Default:index }
+
+cyber_high_cadastro_alunos:
+    pattern:  /cadastro/alunos/{actionName}/{matricula}
+    defaults: { _controller: CyberHighCadastroBundle:Aluno:index }
+
+cyber_high_cadastro_professores:
+    pattern:  /cadastro/professores/{actionName}/{matricula}
+    defaults: { _controller: CyberHighCadastroBundle:Professor:index }
+
+cyber_high_cadastro_turmas:
+    pattern:  /cadastro/turmas/{actionName}/{id}
+    defaults: { _controller: CyberHighCadastroBundle:Turma:index }
+
+login:
+    pattern:   /login
+    defaults:  { _controller: CyberHighCadastroBundle:Security:login }
+login_check:
+    pattern:   /login_check

@@ -1,0 +1,14 @@
+parameters:
+    database_driver: pdo_mysql
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: cyberhigh
+    database_user: root
+    database_password: '83406310'
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    locale: en
+    secret: 39edc599512ec9ac7eeec186c40649da8d4c9eb0
+    database_path: null

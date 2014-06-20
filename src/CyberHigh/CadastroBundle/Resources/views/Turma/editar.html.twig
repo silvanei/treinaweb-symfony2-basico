@@ -1,0 +1,8 @@
+{% extends '::cadastro.html.twig' %}
+{% block body %}
+    <form action="{{ action }}" method="post" {{ form_enctype(form) }}>
+        {{ form_widget(form) }}
+        <input type="submit" value="gravar" />
+    </form>
+    <a href="{{ index }}">Voltar</a>
+{% endblock %}

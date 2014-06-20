@@ -1,0 +1,22 @@
+{% extends '::cadastro.html.twig' %}
+
+{% block body %}
+    <a href="{{editar}}">Incluir aluno</a><br>
+    
+    <table>
+    {% for aluno in alunos %}
+        <tr>
+            <td>
+                <a href="{{path('cyber_high_cadastro_alunos',{'actionName':'editar','matricula':aluno.matricula})}}">{{aluno.matricula}}</a>
+            </td>
+            <td>{{aluno.nome}}</td>
+            <td>{{aluno.turma.nome}}</td>
+            <td>
+                <a href="{{path('cyber_high_cadastro_alunos',{'actionName':'excluir','matricula':aluno.matricula})}}">X</a>
+            </td>
+        </tr>
+    {% endfor %}
+    </table>
+    
+    <a href="{{homePage}}">Página inicial</a>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends '::cadastro.html.twig' %}
+
+{% block body %}
+    <a href="{{editar}}">Incluir turma</a><br>
+    
+    <table>
+        {% for turma in turmas %}
+            <tr>
+                <td>
+                    <a href="{{path('cyber_high_cadastro_turmas',{'actionName':'editar','id':turma.id})}}">{{turma.id}}</a>
+                </td>
+                <td>{{turma.nome}}</td>
+                <td>
+                    <a href="{{path('cyber_high_cadastro_turmas',{'actionName':'excluir','id':turma.id})}}">X</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    
+    <a href="{{homePage}}">Página inicial</a>
+{% endblock %}

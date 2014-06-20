@@ -1,0 +1,13 @@
+{% extends '::base.html.twig' %} 
+
+{% block body %}
+    <h1>CADASTRO DE PEDIDOS</h1>
+    <a href="{{ url }}">Incluir Pedido</a>
+    <br />
+    Pedidos:
+    <ul>
+        {% for pedido in pedidos %}
+             <li>{{ pedido.numero }}</li>
+        {% endfor %}    	
+    </ul>
+{% endblock %}
